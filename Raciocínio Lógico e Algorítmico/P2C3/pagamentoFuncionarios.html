@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+
+var V;
+var E;
+var funcionario = (prompt("Digite E, caso seja estagiário, ou V, caso seja vendedor: "));
+var diasTrabalhados;
+var salario;
+var totalVendas;
+
+
+
+if (funcionario == E) {
+    diasTrabalhados = parseInt(prompt("Quantos dias você trabalhou nesse mês: "));
+    salario = diasTrabalhados * 30 ;
+    document.write("Seu salário é: " + salario);
+}
+
+if (funcionario == V) {
+    totalVendas = parseInt(prompt("Qual valor em vendas você obteve nesse mês: "));
+    salario = (totalVendas * 0,1) + 600 ;
+    document.write("Seu salário é: " + salario);
+}
+
+else {
+    document.write("Digite E ou V");
+}
+
+</script>
